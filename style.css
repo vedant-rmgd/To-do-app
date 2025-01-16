@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #1e4697 , #4e085f);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background-color: white;
+    margin: 150px auto 20px;
+    padding: 40px 30px 40px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.app-top-portion {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#about-app {
+    display: flex;
+}
+
+#stat {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.todo-app img {
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    padding-left: 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.row button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #ff5945;
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    width: 100%;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#img1 {
+    position: absolute;
+    left: 8px;
+    top: 9px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+#img2 {
+    position: absolute;
+    left: 8px;
+    top: 9px;
+    border-radius: 50px;
+    background-size: cover;
+}
+
+#checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+@media (min-width: 319px) and (max-width: 480px){
+    h2{
+       font-size: 1rem; 
+    }
+    .todo-app img{
+        width: 20px;
+    }
+    #stat{
+        font-size: 1rem;
+    }
+    .todo-app{
+        max-width: 360px;
+    }
+    #img1 {
+        top: 14px;
+    }
+    #img2 {
+        top: 14px;
+    }
+}
